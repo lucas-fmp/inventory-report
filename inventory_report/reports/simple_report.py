@@ -42,6 +42,6 @@ class SimpleReport:
 
         report = f"Data de fabricação mais antiga: {oldest_date}\n"
         report += f"Data de validade mais próxima: {closest_valid_date}\n"
-        report += f"Empresa com mais produtos: {most_products_company}\n"
+        report += f"Empresa com mais produtos: {most_products_company}"
 
         return report
