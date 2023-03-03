@@ -1,10 +1,11 @@
+from collections.abc import Iterable
 from inventory_report.importer.importer import Importer
 from inventory_report.inventory.inventory_iterator import InventoryIterator
 from inventory_report.reports.complete_report import CompleteReport
 from inventory_report.reports.simple_report import SimpleReport
 
 
-class InventoryRefactor:
+class InventoryRefactor(Iterable):
     def __init__(self, importer: Importer):
         self.importer = importer
         self.data = []
