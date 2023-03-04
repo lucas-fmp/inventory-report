@@ -40,8 +40,10 @@ class SimpleReport:
         }
         most_products_company = max(company_count, key=company_count.get)
 
-        report = f"Data de fabricação mais antiga: {oldest_date}\n"
-        report += f"Data de validade mais próxima: {closest_valid_date}\n"
-        report += f"Empresa com mais produtos: {most_products_company}"
+        report = (
+            f"Data de fabricação mais antiga: {oldest_date}\n"
+            f"Data de validade mais próxima: {closest_valid_date}\n"
+            f"Empresa com mais produtos: {most_products_company}"
+        )
 
         return report
